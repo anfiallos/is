@@ -18,7 +18,7 @@ public class Credito extends Tarjeta
 	public void retirar(double x) throws Exception 
 	{
 		Movimiento m=new Movimiento();
-		m.setConcepto("Retirada en cajero automático");
+		m.setConcepto("Retiro en el cajero automático");
 		x=(x*0.05<3.0 ? 3 : x*0.05);  // Añadimos una comisión de un 5%, mínimo de 3 euros.
 		m.setImporte(x);
 		mMovimientos.addElement(m);
